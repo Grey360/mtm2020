@@ -1,0 +1,8 @@
+//PRINT2   JOB  PRINTJCL
+//STEP1    EXEC PGM=IDCAMS
+//SYSPRINT DD   SYSOUT=A
+//SYSIN    DD   *
+       PRINT -
+           INDATASET(Z05216.VSAMDS) -
+           COUNT(15) -
+           CHARACTER
